@@ -1,4 +1,4 @@
-update=Mo 16 Apr 2018 22:22:41 CEST
+update=So 29 Apr 2018 13:05:05 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -70,3 +60,13 @@ LibName28=contrib
 LibName29=valves
 LibName30=/home/stoth05/Dokumente/NOKO_2.1/NOKO_2
 LibName31=/home/stoth05/Dokumente/Github/Junior-Stair-Light-Project/Junior-Stair-Light-Project
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
