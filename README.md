@@ -11,16 +11,18 @@ Nothing more to add really, just read the circuit under schematics/kicad (there 
 
 - Power supply, 12V DC, 2A should be enough (I found a 3A in my mess)
 - 1 x Arduino Nano
-2 x 10k resistors
-1 x 5V regulator (L4940V5)
-2 x 100uF electrolytic capacitor
-1 x 100nF ceramic capacitor
+- 2 x 10k resistors
+- 1 x 5V regulator (L4940V5)
+- 2 x 100uF electrolytic capacitor
+- 1 x 100nF ceramic capacitor
+
 Per step:
-1 x LED stripe (12V, for cars)
-2 x 1kOhm resistor
-1 x 10kOhm resistor
-1 x BC337 (or similar) NPN Transistor
-1 x BC327 (or similar) PNP Transistor
+- 1 x LED stripe (12V, for cars)
+- 2 x 1kOhm resistor
+- 1 x 10kOhm resistor
+- 1 x BC337 (or similar) NPN Transistor
+- 1 x BC327 (or similar) PNP Transistor
+
 A prototype board for soldering components
 Some wires for connecting the components
 Tools (soldering iron, solder, cutter, clippers, a Dremel helps to cut the copper on the board)
