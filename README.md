@@ -34,6 +34,20 @@ Additionally you need a prototype board for soldering components, some wires for
 
 I'll create a PCB, so if you want you can order it from your favourite PCB shop, should be cheap as well and save a lot of time. It is not easy to prototype this stuff, depends on you.
 
+# Pictures
+
+![finished board top](images/IMG_2001.JPG)
+This is the finished board, top view.
+
+![finished board bottom](images/IMG_2002.JPG)
+This is the finished board, bottom view.
+
+![connectors view](images/IMG_2003.JPG)
+These are the connectors for the LED strips, power and IR sensors
+
+![test setup](images/IMG_2083.JPG)
+The test setup for finishing the code.
 
 
-Can probably be done on one weekend.
+
+This can probably be done on one weekend.
