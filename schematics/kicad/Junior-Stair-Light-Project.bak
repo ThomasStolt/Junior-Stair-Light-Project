@@ -158,12 +158,12 @@ $EndComp
 $Comp
 L +5V #PWR05
 U 1 1 5AC3C2F8
-P 7925 3550
-F 0 "#PWR05" H 7925 3400 50  0001 C CNN
-F 1 "+5V" H 7925 3690 50  0000 C CNN
-F 2 "" H 7925 3550 50  0001 C CNN
-F 3 "" H 7925 3550 50  0001 C CNN
-	1    7925 3550
+P 7925 3450
+F 0 "#PWR05" H 7925 3300 50  0001 C CNN
+F 1 "+5V" H 7925 3590 50  0000 C CNN
+F 2 "" H 7925 3450 50  0001 C CNN
+F 3 "" H 7925 3450 50  0001 C CNN
+	1    7925 3450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -231,8 +231,8 @@ Text GLabel 7625 4750 2    39   Input ~ 0
 Step13_a
 Text GLabel 800  1650 0    39   Input ~ 0
 Step1_a
-Text Notes 9500 4700 0    60   ~ 0
-Zu den Pluspolen der LED Streifen.\nMasse der LED Streifen sind alle an\nMasse angeschlossen.
+Text Notes 9375 4775 0    60   ~ 0
+To the positive lines of the LED stripes.\nAll GND lines are connected to GND\ndirectly.
 Wire Wire Line
 	6375 1050 6375 850 
 Wire Wire Line
@@ -1485,7 +1485,7 @@ Connection ~ 4625 4325
 Wire Wire Line
 	7525 3650 7925 3650
 Wire Wire Line
-	7925 3650 7925 3550
+	7925 3650 7925 3450
 $Comp
 L L4940V5 U1
 U 1 1 5AD50ABF
@@ -1560,25 +1560,19 @@ F 3 "" H 9250 4450 50  0001 C CNN
 	1    9250 4450
 	1    0    0    -1  
 $EndComp
-Text GLabel 7625 4050 2    39   Input ~ 0
-IR_1
-Wire Wire Line
-	7525 4050 7625 4050
-Text GLabel 8950 3100 0    39   Input ~ 0
-IR_1
 $Comp
-L R R?
+L R 100k
 U 1 1 5B89507E
-P 10850 1000
-F 0 "R?" V 10930 1000 50  0000 C CNN
-F 1 "R" V 10850 1000 50  0000 C CNN
-F 2 "" V 10780 1000 50  0001 C CNN
-F 3 "" H 10850 1000 50  0001 C CNN
-	1    10850 1000
+P 8225 3700
+F 0 "100k" V 8305 3700 50  0000 C CNN
+F 1 "R" V 8225 3700 50  0000 C CNN
+F 2 "" V 8155 3700 50  0001 C CNN
+F 3 "" H 8225 3700 50  0001 C CNN
+	1    8225 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9000 3500 9700 3500
+	8825 3500 9700 3500
 Wire Wire Line
 	9700 3600 9250 3600
 Wire Wire Line
@@ -1604,4 +1598,57 @@ Wire Wire Line
 Wire Wire Line
 	9450 3400 9700 3400
 Connection ~ 9450 2850
+Wire Wire Line
+	7525 4050 8825 4050
+Wire Wire Line
+	8825 4050 8825 3500
+Wire Wire Line
+	9700 2950 8700 2950
+Wire Wire Line
+	8700 2950 8700 3950
+Wire Wire Line
+	8700 3950 7525 3950
+$Comp
+L +5V #PWR?
+U 1 1 5B89A2E0
+P 8225 3450
+F 0 "#PWR?" H 8225 3300 50  0001 C CNN
+F 1 "+5V" H 8225 3590 50  0000 C CNN
+F 2 "" H 8225 3450 50  0001 C CNN
+F 3 "" H 8225 3450 50  0001 C CNN
+	1    8225 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5B89A848
+P 8425 3450
+F 0 "#PWR?" H 8425 3300 50  0001 C CNN
+F 1 "+5V" H 8425 3590 50  0000 C CNN
+F 2 "" H 8425 3450 50  0001 C CNN
+F 3 "" H 8425 3450 50  0001 C CNN
+	1    8425 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B89A934
+P 8425 3700
+F 0 "R?" V 8505 3700 50  0000 C CNN
+F 1 "100k" V 8425 3700 50  0000 C CNN
+F 2 "" V 8355 3700 50  0001 C CNN
+F 3 "" H 8425 3700 50  0001 C CNN
+	1    8425 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8225 3450 8225 3550
+Wire Wire Line
+	8425 3450 8425 3550
+Wire Wire Line
+	8225 3850 8225 3950
+Connection ~ 8225 3950
+Wire Wire Line
+	8425 3850 8425 4050
+Connection ~ 8425 4050
 $EndSCHEMATC
