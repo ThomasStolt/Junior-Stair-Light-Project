@@ -23,11 +23,7 @@ Per step:
 - 1 x BC337 (or similar) NPN Transistor
 - 1 x BC327 (or similar) PNP Transistor
 
-A prototype board for soldering components
-Some wires for connecting the components
-Tools (soldering iron, solder, cutter, clippers, a Dremel helps to cut the copper on the board)
-
-Some time and patience
+Additionally you need a prototype board for soldering components, some wires for connecting the components, tools (soldering iron, solder, cutter, clippers, a Dremel helps to cut the copper on the board) and some time and patience.
 
 # Steps:
 1. buy all the material
