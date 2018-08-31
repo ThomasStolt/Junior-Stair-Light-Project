@@ -36,7 +36,7 @@ I'll create a PCB, so if you want you can order it from your favourite PCB shop,
 
 # Pictures
 
-(images/IMG_2001.JPG)
+![Ready Board](images/IMG_2001.JPG)
 This is the ready board.
 
 
