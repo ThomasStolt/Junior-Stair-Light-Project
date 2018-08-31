@@ -50,18 +50,18 @@
    Nano and other boards. */
 // SOFTPWM_DEFINE_CHANNEL(0, DDRD, PORTD, PORTD0);  //Arduino pin 0
 // SOFTPWM_DEFINE_CHANNEL(1, DDRD, PORTD, PORTD1);  //Arduino pin 1
-SOFTPWM_DEFINE_CHANNEL(2, DDRD, PORTD, PORTD2);  //Arduino pin 2
-SOFTPWM_DEFINE_CHANNEL(3, DDRD, PORTD, PORTD3);  //Arduino pin 3
-SOFTPWM_DEFINE_CHANNEL(4, DDRD, PORTD, PORTD4);  //Arduino pin 4
-SOFTPWM_DEFINE_CHANNEL(5, DDRD, PORTD, PORTD5);  //Arduino pin 5
-SOFTPWM_DEFINE_CHANNEL(6, DDRD, PORTD, PORTD6);  //Arduino pin 6
-SOFTPWM_DEFINE_CHANNEL(7, DDRD, PORTD, PORTD7);  //Arduino pin 7
-SOFTPWM_DEFINE_CHANNEL(8, DDRB, PORTB, PORTB0);  //Arduino pin 8
-SOFTPWM_DEFINE_CHANNEL(9, DDRB, PORTB, PORTB1);  //Arduino pin 9
-SOFTPWM_DEFINE_CHANNEL(10, DDRB, PORTB, PORTB2);  //Arduino pin 10
-SOFTPWM_DEFINE_CHANNEL(11, DDRB, PORTB, PORTB3);  //Arduino pin 11
-SOFTPWM_DEFINE_CHANNEL(12, DDRB, PORTB, PORTB4);  //Arduino pin 12
-SOFTPWM_DEFINE_CHANNEL(13, DDRB, PORTB, PORTB5);  //Arduino pin 13
+SOFTPWM_DEFINE_CHANNEL(2, DDRD, PORTD, PORTD2);  //Arduino pin D2
+SOFTPWM_DEFINE_CHANNEL(3, DDRD, PORTD, PORTD3);  //Arduino pin D3
+SOFTPWM_DEFINE_CHANNEL(4, DDRD, PORTD, PORTD4);  //Arduino pin D4
+SOFTPWM_DEFINE_CHANNEL(5, DDRD, PORTD, PORTD5);  //Arduino pin D5
+SOFTPWM_DEFINE_CHANNEL(6, DDRD, PORTD, PORTD6);  //Arduino pin D6
+SOFTPWM_DEFINE_CHANNEL(7, DDRD, PORTD, PORTD7);  //Arduino pin D7
+SOFTPWM_DEFINE_CHANNEL(8, DDRB, PORTB, PORTB0);  //Arduino pin D8
+SOFTPWM_DEFINE_CHANNEL(9, DDRB, PORTB, PORTB1);  //Arduino pin D9
+SOFTPWM_DEFINE_CHANNEL(10, DDRB, PORTB, PORTB2);  //Arduino pin D10
+SOFTPWM_DEFINE_CHANNEL(11, DDRB, PORTB, PORTB3);  //Arduino pin D11
+SOFTPWM_DEFINE_CHANNEL(12, DDRB, PORTB, PORTB4);  //Arduino pin D12
+SOFTPWM_DEFINE_CHANNEL(13, DDRB, PORTB, PORTB5);  //Arduino pin D13
 SOFTPWM_DEFINE_CHANNEL(14, DDRC, PORTC, PORTC0);  //Arduino pin A0
 // SOFTPWM_DEFINE_CHANNEL(15, DDRC, PORTC, PORTC1);  //Arduino pin A1
 // SOFTPWM_DEFINE_CHANNEL(16, DDRC, PORTC, PORTC2);  //Arduino pin A2
@@ -120,11 +120,11 @@ void setup() {
 
 static volatile uint8_t v = 0;
 void loop() {
-  for (uint8_t i = 2; i < Palatis::SoftPWM.size(); ++i) {
+//  for (uint8_t i = 2; i < Palatis::SoftPWM.size(); ++i) {
+  for (uint8_t i = 2; i < 15; ++i) {
     Serial.print(micros());
     Serial.print(" loop(): ");
     Serial.println(i);
-
     unsigned long const WAIT = 500000 / Palatis::SoftPWM.PWMlevels() / 2;
     unsigned long nextMicros = 0;
     for (int v = 0; v < Palatis::SoftPWM.PWMlevels() - 1; ++v) {
@@ -132,32 +132,20 @@ void loop() {
       nextMicros = micros() + WAIT;
       Palatis::SoftPWM.set(i, v);
     }
-/*    for (int v = Palatis::SoftPWM.PWMlevels() - 1; v >= 0; --v) {
-      while (micros() < nextMicros);
-      nextMicros = micros() + WAIT;
-      Palatis::SoftPWM.set(i, v);
-    } */
   }
 
-for (uint8_t i = 2; i < Palatis::SoftPWM.size(); ++i) {
+//  for (uint8_t i = 2; i < Palatis::SoftPWM.size(); ++i) {
+  for (uint8_t i = 2; i < 15; ++i) {
     Serial.print(micros());
     Serial.print(" loop(): ");
     Serial.println(i);
-
     unsigned long const WAIT = 500000 / Palatis::SoftPWM.PWMlevels() / 2;
     unsigned long nextMicros = 0;
-/*    for (int v = 0; v < Palatis::SoftPWM.PWMlevels() - 1; ++v) {
-      while (micros() < nextMicros);
-      nextMicros = micros() + WAIT;
-      Palatis::SoftPWM.set(i, v);
-    } */
     for (int v = Palatis::SoftPWM.PWMlevels() - 1; v >= 0; --v) {
       while (micros() < nextMicros);
       nextMicros = micros() + WAIT;
       Palatis::SoftPWM.set(i, v);
     }
   }
-
-
   
 }
