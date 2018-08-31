@@ -47,6 +47,7 @@ These are the connectors for the LED strips, power and IR sensors
 
 ![test setup](images/IMG_2083.JPG)
 The test setup for finishing the code.
+I did not have enough left over stripes, hence there are some missing here, but that is sufficient.
 
 
 
