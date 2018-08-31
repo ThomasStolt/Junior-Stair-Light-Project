@@ -69,31 +69,6 @@ SOFTPWM_DEFINE_CHANNEL(14, DDRC, PORTC, PORTC0);  //Arduino pin A0
 // SOFTPWM_DEFINE_CHANNEL(18, DDRC, PORTC, PORTC4);  //Arduino pin A4
 // SOFTPWM_DEFINE_CHANNEL(19, DDRC, PORTC, PORTC5);  //Arduino pin A5
 
-
-/* Or you may want inverted outputs: */
-/*
-  SOFTPWM_DEFINE_CHANNEL_INVERT(0, DDRD, PORTD, PORTD0);  //Arduino pin 0
-  SOFTPWM_DEFINE_CHANNEL_INVERT(1, DDRD, PORTD, PORTD1);  //Arduino pin 1
-  SOFTPWM_DEFINE_CHANNEL_INVERT(2, DDRD, PORTD, PORTD2);  //Arduino pin 2
-  SOFTPWM_DEFINE_CHANNEL_INVERT(3, DDRD, PORTD, PORTD3);  //Arduino pin 3
-  SOFTPWM_DEFINE_CHANNEL_INVERT(4, DDRD, PORTD, PORTD4);  //Arduino pin 4
-  SOFTPWM_DEFINE_CHANNEL_INVERT(5, DDRD, PORTD, PORTD5);  //Arduino pin 5
-  SOFTPWM_DEFINE_CHANNEL_INVERT(6, DDRD, PORTD, PORTD6);  //Arduino pin 6
-  SOFTPWM_DEFINE_CHANNEL_INVERT(7, DDRD, PORTD, PORTD7);  //Arduino pin 7
-  SOFTPWM_DEFINE_CHANNEL_INVERT(8, DDRB, PORTB, PORTB0);  //Arduino pin 8
-  SOFTPWM_DEFINE_CHANNEL_INVERT(9, DDRB, PORTB, PORTB2);  //Arduino pin 9
-  SOFTPWM_DEFINE_CHANNEL_INVERT(10, DDRB, PORTB, PORTB2);  //Arduino pin 10
-  SOFTPWM_DEFINE_CHANNEL_INVERT(11, DDRB, PORTB, PORTB3);  //Arduino pin 11
-  SOFTPWM_DEFINE_CHANNEL_INVERT(12, DDRB, PORTB, PORTB4);  //Arduino pin 12
-  SOFTPWM_DEFINE_CHANNEL_INVERT(13, DDRB, PORTB, PORTB5);  //Arduino pin 13
-  SOFTPWM_DEFINE_CHANNEL_INVERT(14, DDRC, PORTC, PORTC0);  //Arduino pin A0
-  SOFTPWM_DEFINE_CHANNEL_INVERT(15, DDRC, PORTC, PORTC1);  //Arduino pin A1
-  SOFTPWM_DEFINE_CHANNEL_INVERT(16, DDRC, PORTC, PORTC2);  //Arduino pin A2
-  SOFTPWM_DEFINE_CHANNEL_INVERT(17, DDRC, PORTC, PORTC3);  //Arduino pin A3
-  SOFTPWM_DEFINE_CHANNEL_INVERT(18, DDRC, PORTC, PORTC4);  //Arduino pin A4
-  SOFTPWM_DEFINE_CHANNEL_INVERT(19, DDRC, PORTC, PORTC5);  //Arduino pin A5
-*/
-
 /* Here you make an instance of desired channel counts you want
    with the default 256 PWM levels (0 ~ 255). */
 //SOFTPWM_DEFINE_OBJECT(20);
@@ -119,33 +94,120 @@ void setup() {
 }
 
 static volatile uint8_t v = 0;
-void loop() {
-//  for (uint8_t i = 2; i < Palatis::SoftPWM.size(); ++i) {
-  for (uint8_t i = 2; i < 15; ++i) {
-    Serial.print(micros());
-    Serial.print(" loop(): ");
-    Serial.println(i);
-    unsigned long const WAIT = 500000 / Palatis::SoftPWM.PWMlevels() / 2;
-    unsigned long nextMicros = 0;
-    for (int v = 0; v < Palatis::SoftPWM.PWMlevels() - 1; ++v) {
-      while (micros() < nextMicros);
-      nextMicros = micros() + WAIT;
-      Palatis::SoftPWM.set(i, v);
-    }
-  }
+int analog_threshold = 10;
+int animation_duration = 20000;
 
-//  for (uint8_t i = 2; i < Palatis::SoftPWM.size(); ++i) {
-  for (uint8_t i = 2; i < 15; ++i) {
-    Serial.print(micros());
-    Serial.print(" loop(): ");
-    Serial.println(i);
-    unsigned long const WAIT = 500000 / Palatis::SoftPWM.PWMlevels() / 2;
-    unsigned long nextMicros = 0;
-    for (int v = Palatis::SoftPWM.PWMlevels() - 1; v >= 0; --v) {
-      while (micros() < nextMicros);
-      nextMicros = micros() + WAIT;
-      Palatis::SoftPWM.set(i, v);
+void loop() {
+    delay(100);
+    int pra=analogRead(7);
+    Serial.print("pra = ");
+    Serial.println(pra);
+    int prb=analogRead(6);
+    Serial.print("prb = ");
+    Serial.println(prb);
+    int time_s, time_c;
+    
+    // Direction 1 on
+    if ( pra < analog_threshold ) {
+      for (uint8_t i = 2; i < 15; ++i) {
+        Serial.print(micros());
+        Serial.print(" loop(): ");
+        Serial.println(i);
+        unsigned long const WAIT = 300000 / Palatis::SoftPWM.PWMlevels() / 2;
+        unsigned long nextMicros = 0;
+        for (int v = 0; v < Palatis::SoftPWM.PWMlevels() - 1; ++v) {
+          while (micros() < nextMicros);
+          nextMicros = micros() + WAIT;
+          Palatis::SoftPWM.set(i, v);
+        }
+      }
+      
+      // set a start timer, so we know how much time has passed
+      time_s = millis();
+      while(true) {
+        delay(100);
+        Serial.print(".");
+        // read the "other" PRI
+        prb=analogRead(6);
+        // this exits the while loop when we detect the other PRI triggered
+        if ( prb < analog_threshold ) {
+          break;
+        }
+        // this exists the while loop when animation_duration seconds have passed
+        time_c = millis();
+        if ((time_c - time_s) > animation_duration) {
+          break;
+        }
+      }
+      
+      // Direction 1 off
+      for (uint8_t i = 2; i < 15; ++i) {
+        Serial.print(micros());
+        Serial.print(" loop(): ");
+        Serial.println(i);
+        unsigned long const WAIT = 300000 / Palatis::SoftPWM.PWMlevels() / 2;
+        unsigned long nextMicros = 0;
+        for (int v = Palatis::SoftPWM.PWMlevels() - 1; v >= 0; --v) {
+          while (micros() < nextMicros);
+          nextMicros = micros() + WAIT;
+          Palatis::SoftPWM.set(i, v);
+        }
+      }
+      delay(1000);
     }
+    
+    pra=analogRead(7);
+    Serial.print("pra = ");
+    Serial.println(pra);
+    prb=analogRead(6);
+    Serial.print("prb = ");
+    Serial.println(prb);
+    // Direction 2 on
+    if (prb < analog_threshold) {
+      for (uint8_t i = 14; i > 1; --i) {
+        Serial.print(micros());
+        Serial.print(" loop(): ");
+        Serial.println(i);
+        unsigned long const WAIT = 300000 / Palatis::SoftPWM.PWMlevels() / 2;
+        unsigned long nextMicros = 0;
+        for (int v = 0; v < Palatis::SoftPWM.PWMlevels() - 1; ++v) {
+          while (micros() < nextMicros);
+          nextMicros = micros() + WAIT;
+          Palatis::SoftPWM.set(i, v);
+        }
+      }
+
+      // set a start timer, so we know how much time has passed
+      time_s = millis();
+      while(true) {
+        delay(100);
+        Serial.print(".");
+        // read the "other" PRI
+        prb=analogRead(7);
+        // this exits the while loop when we detect the other PRI triggered
+        if ( prb < analog_threshold ) {
+          break;
+        }
+        // this exists the while loop when animation_duration seconds have passed
+        time_c = millis();
+        if ((time_c - time_s) > animation_duration) {
+          break;
+        }
+      }
+      
+      // Direction 2 off
+      for (uint8_t i = 14; i > 1; --i) {
+        Serial.print(micros());
+        Serial.print(" loop(): ");
+        Serial.println(i);
+        unsigned long const WAIT = 300000 / Palatis::SoftPWM.PWMlevels() / 2;
+        unsigned long nextMicros = 0;
+        for (int v = Palatis::SoftPWM.PWMlevels() - 1; v >= 0; --v) {
+          while (micros() < nextMicros);
+          nextMicros = micros() + WAIT;
+         Palatis::SoftPWM.set(i, v);
+        }
+      }
+      delay(1000);
+    }    
   }
-  
-}
