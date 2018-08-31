@@ -34,6 +34,15 @@ Additionally you need a prototype board for soldering components, some wires for
 
 I'll create a PCB, so if you want you can order it from your favourite PCB shop, should be cheap as well and save a lot of time. It is not easy to prototype this stuff, depends on you.
 
+# Pictures
+
+(images/IMG_2001.JPG)
+This is the ready board.
+
+
+
+
+
 
 
 Can probably be done on one weekend.
