@@ -7,7 +7,7 @@ It is actually easier to switch the negative lines, that just requires one trans
 
 Nothing more to add really, just read the circuit under schematics/kicad (there is a PDF) and you should be good.
 
-# BOM (for 13 steps):
+# Needed Materials:
 
 - Power supply, 12V DC, 2A should be enough (I found a 3A in my mess)
 - 1 x Arduino Nano
