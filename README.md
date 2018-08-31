@@ -9,8 +9,8 @@ Nothing more to add really, just read the circuit under schematics/kicad (there 
 
 # BOM (for 13 steps):
 
-Power supply, 12V DC, 2A should be enough (I found a 3A in my mess)
-1 x Arduino Nano
+- Power supply, 12V DC, 2A should be enough (I found a 3A in my mess)
+- 1 x Arduino Nano
 2 x 10k resistors
 1 x 5V regulator (L4940V5)
 2 x 100uF electrolytic capacitor
