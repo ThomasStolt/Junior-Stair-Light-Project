@@ -144,31 +144,31 @@ F 3 "" H 9725 4150 50  0001 C CNN
 	1    9725 4150
 	1    0    0    -1  
 $EndComp
-Text GLabel 8850 4900 2    39   Input ~ 0
+Text GLabel 8100 5075 2    39   Input ~ 0
 Step1
-Text GLabel 8850 5000 2    39   Input ~ 0
+Text GLabel 8100 5175 2    39   Input ~ 0
 Step2
-Text GLabel 8850 5100 2    39   Input ~ 0
+Text GLabel 8100 5275 2    39   Input ~ 0
 Step3
-Text GLabel 8850 5200 2    39   Input ~ 0
+Text GLabel 8100 5375 2    39   Input ~ 0
 Step4
-Text GLabel 8850 5300 2    39   Input ~ 0
+Text GLabel 8100 5475 2    39   Input ~ 0
 Step5
-Text GLabel 8850 5400 2    39   Input ~ 0
+Text GLabel 8100 5575 2    39   Input ~ 0
 Step6
-Text GLabel 8850 5500 2    39   Input ~ 0
+Text GLabel 9400 5075 2    39   Input ~ 0
 Step7
-Text GLabel 8850 5600 2    39   Input ~ 0
+Text GLabel 9400 5175 2    39   Input ~ 0
 Step8
-Text GLabel 8850 5700 2    39   Input ~ 0
+Text GLabel 9400 5275 2    39   Input ~ 0
 Step9
-Text GLabel 8850 5800 2    39   Input ~ 0
+Text GLabel 9400 5375 2    39   Input ~ 0
 Step10
-Text GLabel 10650 4900 2    39   Input ~ 0
+Text GLabel 9400 5475 2    39   Input ~ 0
 Step11
-Text GLabel 10650 5000 2    39   Input ~ 0
+Text GLabel 9400 5575 2    39   Input ~ 0
 Step12
-Text GLabel 10650 5100 2    39   Input ~ 0
+Text GLabel 10700 5075 2    39   Input ~ 0
 Step13
 Text GLabel 8225 2750 0    39   Input ~ 0
 Step1_a
@@ -198,7 +198,7 @@ Text GLabel 9325 3450 2    39   Input ~ 0
 Step13_a
 Text GLabel 800  1650 0    39   Input ~ 0
 Step1_a
-Text Notes 7675 4725 0    60   ~ 0
+Text Notes 7375 4725 0    60   ~ 0
 To the positive lines (anodes) of the LED stripes. All GND lines of the LED\nstripes are connected to GND directly.
 Wire Wire Line
 	9575 750  9575 1050
@@ -229,31 +229,31 @@ Wire Wire Line
 Wire Wire Line
 	9725 2450 9725 4150
 Wire Wire Line
-	8850 4900 8700 4900
+	8100 5075 7950 5075
 Wire Wire Line
-	8850 5000 8700 5000
+	8100 5175 7950 5175
 Wire Wire Line
-	8850 5100 8700 5100
+	8100 5275 7950 5275
 Wire Wire Line
-	8850 5200 8700 5200
+	8100 5375 7950 5375
 Wire Wire Line
-	8850 5300 8700 5300
+	8100 5475 7950 5475
 Wire Wire Line
-	8850 5400 8700 5400
+	8100 5575 7950 5575
 Wire Wire Line
-	8850 5500 8700 5500
+	9400 5075 9250 5075
 Wire Wire Line
-	8850 5600 8700 5600
+	9400 5175 9250 5175
 Wire Wire Line
-	8850 5700 8700 5700
+	9400 5275 9250 5275
 Wire Wire Line
-	8850 5800 8700 5800
+	9400 5375 9250 5375
 Wire Wire Line
-	10650 4900 10500 4900
+	9400 5475 9250 5475
 Wire Wire Line
-	10650 5000 10500 5000
+	9400 5575 9250 5575
 Wire Wire Line
-	10650 5100 10500 5100
+	10700 5075 10550 5075
 Wire Wire Line
 	8225 2750 8325 2750
 Wire Wire Line
@@ -277,29 +277,17 @@ Wire Wire Line
 Wire Wire Line
 	8225 3750 8325 3750
 Wire Notes Line
-	8050 4900 8400 4900
+	7375 5075 7725 5075
 Wire Notes Line
-	8400 5000 8000 5000
+	7725 5175 7325 5175
 Wire Notes Line
-	8000 5000 8000 4850
+	7325 5175 7325 5025
 Wire Notes Line
-	8400 5100 7950 5100
+	7725 5275 7275 5275
 Wire Notes Line
-	7950 5100 7950 4950
+	7275 5275 7275 5125
 Wire Notes Line
-	7600 5800 8400 5800
-Wire Notes Line
-	7650 5700 8400 5700
-Wire Notes Line
-	7700 5600 8400 5600
-Wire Notes Line
-	7750 5500 8400 5500
-Wire Notes Line
-	7800 5400 8400 5400
-Wire Notes Line
-	7850 5300 8400 5300
-Wire Notes Line
-	7900 5200 8400 5200
+	7225 5375 7725 5375
 $Comp
 L R R1_1
 U 1 1 5AD48082
@@ -1436,21 +1424,9 @@ Wire Wire Line
 Wire Wire Line
 	9225 3450 9325 3450
 Wire Notes Line
-	7900 5200 7900 5050
+	7225 5375 7225 5225
 Wire Notes Line
-	7850 5300 7850 5150
-Wire Notes Line
-	7800 5400 7800 5250
-Wire Notes Line
-	7750 5500 7750 5325
-Wire Notes Line
-	7700 5600 7700 5450
-Wire Notes Line
-	7650 5700 7650 5550
-Wire Notes Line
-	7600 5800 7600 5650
-Wire Notes Line
-	8050 4900 8050 4750
+	7375 5075 7375 4925
 $Comp
 L CONN_01X03 J3
 U 1 1 5AE78337
@@ -1496,7 +1472,7 @@ F 3 "" H 9825 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10075 2925 10625 2925
+	10025 2925 10625 2925
 Wire Wire Line
 	10625 3025 10325 3025
 Wire Wire Line
@@ -1523,15 +1499,11 @@ Wire Wire Line
 	10425 2825 10625 2825
 Connection ~ 10425 2150
 Wire Wire Line
-	9225 2750 10025 2750
-Wire Wire Line
-	10025 2750 10075 2925
+	10025 2550 10025 2925
 Wire Wire Line
 	10625 2250 10225 2250
 Wire Wire Line
-	10225 2250 10225 2650
-Wire Wire Line
-	10225 2650 9225 2650
+	10225 2250 10225 2750
 $Comp
 L R R2
 U 1 1 5B89A934
@@ -1544,11 +1516,9 @@ F 3 "" H 10025 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9825 2550 9825 2650
-Connection ~ 9825 2650
-Wire Wire Line
-	10025 2750 10025 2550
-Connection ~ 10025 2750
+	9825 2550 9825 2750
+Connection ~ 9825 2750
+Connection ~ 10025 2850
 Text GLabel 9325 3350 2    39   Input ~ 0
 Step14_a
 Text GLabel 9325 3250 2    39   Input ~ 0
@@ -1559,10 +1529,6 @@ Text GLabel 9325 3050 2    39   Input ~ 0
 Step17_a
 Text GLabel 9325 2950 2    39   Input ~ 0
 Step18_a
-Text GLabel 9325 2850 2    39   Input ~ 0
-Step19_a
-Wire Wire Line
-	9225 2850 9325 2850
 Wire Wire Line
 	9225 2950 9325 2950
 Wire Wire Line
@@ -2012,93 +1978,8 @@ Wire Wire Line
 Wire Wire Line
 	6675 4325 6350 4325
 Connection ~ 6350 4325
-Text GLabel 5975 5325 0    39   Input ~ 0
-Step19_a
-$Comp
-L R R19_1
-U 1 1 5B8C8DA4
-P 6175 5325
-F 0 "R19_1" V 6255 5325 50  0000 C CNN
-F 1 "10k" V 6175 5325 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6105 5325 50  0001 C CNN
-F 3 "" H 6175 5325 50  0001 C CNN
-	1    6175 5325
-	0    1    1    0   
-$EndComp
-$Comp
-L Q_NPN_BCE T19_1
-U 1 1 5B8C8DAA
-P 6575 5325
-F 0 "T19_1" H 6775 5375 50  0000 L CNN
-F 1 "BC337" H 6775 5275 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 6775 5425 50  0001 C CNN
-F 3 "" H 6575 5325 50  0001 C CNN
-	1    6575 5325
-	1    0    0    -1  
-$EndComp
-$Comp
-L Q_PNP_BCE T19_2
-U 1 1 5B8C8DB0
-P 6925 4750
-F 0 "T19_2" H 7125 4800 50  0000 L CNN
-F 1 "BC327" H 7125 4700 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 7125 4850 50  0001 C CNN
-F 3 "" H 6925 4750 50  0001 C CNN
-	1    6925 4750
-	1    0    0    1   
-$EndComp
-$Comp
-L R R19_2
-U 1 1 5B8C8DB6
-P 6675 4925
-F 0 "R19_2" V 6755 4925 50  0000 C CNN
-F 1 "1k" V 6675 4925 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6605 4925 50  0001 C CNN
-F 3 "" H 6675 4925 50  0001 C CNN
-	1    6675 4925
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6675 5075 6675 5125
-Wire Wire Line
-	6375 5325 6325 5325
-Wire Wire Line
-	6025 5325 5975 5325
-Text GLabel 7075 5000 2    39   Input ~ 0
-Step19
-Wire Wire Line
-	7025 4950 7025 5000
-Wire Wire Line
-	7025 5000 7075 5000
-$Comp
-L R R19_3
-U 1 1 5B8C8DC2
-P 6675 4575
-F 0 "R19_3" V 6755 4575 50  0000 C CNN
-F 1 "1k" V 6675 4575 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6605 4575 50  0001 C CNN
-F 3 "" H 6675 4575 50  0001 C CNN
-	1    6675 4575
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6675 4725 6675 4775
-Wire Wire Line
-	6725 4750 6675 4750
-Connection ~ 6675 4750
-Wire Wire Line
-	6675 4425 6675 4400
-Wire Wire Line
-	6675 4400 7025 4400
-Wire Wire Line
-	7025 4400 7025 4550
 Wire Wire Line
 	6350 3100 6350 6975
-Wire Wire Line
-	6675 5525 6675 5550
-Wire Wire Line
-	6675 5550 6350 5550
-Connection ~ 6350 5550
 Wire Wire Line
 	6350 6975 1175 6975
 Connection ~ 2900 6975
@@ -2106,90 +1987,93 @@ Connection ~ 1175 6975
 Connection ~ 4625 6975
 Wire Wire Line
 	2900 1875 2900 6975
-$Comp
-L Conn_01x10 J5
-U 1 1 5B8D02E2
-P 8500 5300
-F 0 "J5" H 8500 5800 50  0000 C CNN
-F 1 "Conn_01x10" H 8500 4700 50  0000 C CNN
-F 2 "Connectors_JST:JST_XH_B10B-XH-A_10x2.50mm_Straight" H 8500 5300 50  0001 C CNN
-F 3 "" H 8500 5300 50  0001 C CNN
-	1    8500 5300
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Conn_01x10 J6
-U 1 1 5B8D0C8F
-P 10300 5300
-F 0 "J6" H 10300 5800 50  0000 C CNN
-F 1 "Conn_01x10" H 10300 4700 50  0000 C CNN
-F 2 "Connectors_JST:JST_XH_B10B-XH-A_10x2.50mm_Straight" H 10300 5300 50  0001 C CNN
-F 3 "" H 10300 5300 50  0001 C CNN
-	1    10300 5300
-	-1   0    0    -1  
-$EndComp
-Wire Notes Line
-	9850 4900 10200 4900
-Wire Notes Line
-	10200 5000 9800 5000
-Wire Notes Line
-	9800 5000 9800 4850
-Wire Notes Line
-	10200 5100 9750 5100
-Wire Notes Line
-	9750 5100 9750 4950
-Wire Notes Line
-	9400 5800 10200 5800
-Wire Notes Line
-	9450 5700 10200 5700
-Wire Notes Line
-	9500 5600 10200 5600
-Wire Notes Line
-	9550 5500 10200 5500
-Wire Notes Line
-	9600 5400 10200 5400
-Wire Notes Line
-	9650 5300 10200 5300
-Wire Notes Line
-	9700 5200 10200 5200
-Wire Notes Line
-	9700 5200 9700 5050
-Wire Notes Line
-	9650 5300 9650 5150
-Wire Notes Line
-	9600 5400 9600 5250
-Wire Notes Line
-	9550 5500 9550 5325
-Wire Notes Line
-	9500 5600 9500 5450
-Wire Notes Line
-	9450 5700 9450 5550
-Wire Notes Line
-	9400 5800 9400 5650
-Wire Notes Line
-	9850 4900 9850 4750
-Text GLabel 10650 5200 2    39   Input ~ 0
+Text GLabel 10700 5175 2    39   Input ~ 0
 Step14
-Text GLabel 10650 5300 2    39   Input ~ 0
+Text GLabel 10700 5275 2    39   Input ~ 0
 Step15
-Text GLabel 10650 5400 2    39   Input ~ 0
+Text GLabel 10700 5375 2    39   Input ~ 0
 Step16
-Text GLabel 10650 5500 2    39   Input ~ 0
+Text GLabel 10700 5475 2    39   Input ~ 0
 Step17
-Text GLabel 10650 5600 2    39   Input ~ 0
+Text GLabel 10700 5575 2    39   Input ~ 0
 Step18
-Text GLabel 10650 5700 2    39   Input ~ 0
-Step19
 Wire Wire Line
-	10500 5200 10650 5200
+	10550 5175 10700 5175
 Wire Wire Line
-	10500 5300 10650 5300
+	10550 5275 10700 5275
 Wire Wire Line
-	10500 5400 10650 5400
+	10550 5375 10700 5375
 Wire Wire Line
-	10500 5500 10650 5500
+	10550 5475 10700 5475
 Wire Wire Line
-	10500 5600 10650 5600
+	10550 5575 10700 5575
 Wire Wire Line
-	10500 5700 10650 5700
+	10025 2850 9225 2850
+Wire Wire Line
+	10225 2750 9225 2750
+$Comp
+L Conn_01x06 J2
+U 1 1 5B8D5B9A
+P 7750 5275
+F 0 "J2" H 7750 5575 50  0000 C CNN
+F 1 "Conn_01x06" H 7750 4875 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B06B-XH-A_06x2.50mm_Straight" H 7750 5275 50  0001 C CNN
+F 3 "" H 7750 5275 50  0001 C CNN
+	1    7750 5275
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line
+	8675 5075 9025 5075
+Wire Notes Line
+	9025 5175 8625 5175
+Wire Notes Line
+	8625 5175 8625 5025
+Wire Notes Line
+	9025 5275 8575 5275
+Wire Notes Line
+	8575 5275 8575 5125
+Wire Notes Line
+	8525 5375 9025 5375
+Wire Notes Line
+	8525 5375 8525 5225
+Wire Notes Line
+	8675 5075 8675 4925
+$Comp
+L Conn_01x06 J5
+U 1 1 5B8D60FA
+P 9050 5275
+F 0 "J5" H 9050 5575 50  0000 C CNN
+F 1 "Conn_01x06" H 9050 4875 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B06B-XH-A_06x2.50mm_Straight" H 9050 5275 50  0001 C CNN
+F 3 "" H 9050 5275 50  0001 C CNN
+	1    9050 5275
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line
+	9975 5075 10325 5075
+Wire Notes Line
+	10325 5175 9925 5175
+Wire Notes Line
+	9925 5175 9925 5025
+Wire Notes Line
+	10325 5275 9875 5275
+Wire Notes Line
+	9875 5275 9875 5125
+Wire Notes Line
+	9825 5375 10325 5375
+Wire Notes Line
+	9825 5375 9825 5225
+Wire Notes Line
+	9975 5075 9975 4925
+$Comp
+L Conn_01x06 J6
+U 1 1 5B8D6AF0
+P 10350 5275
+F 0 "J6" H 10350 5575 50  0000 C CNN
+F 1 "Conn_01x06" H 10350 4875 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B06B-XH-A_06x2.50mm_Straight" H 10350 5275 50  0001 C CNN
+F 3 "" H 10350 5275 50  0001 C CNN
+	1    10350 5275
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
