@@ -2,7 +2,7 @@
 
 This is a smaller/easier/cheaper version of my NexPixel Stair Light Project. The basic idea is to use a bunch of cheap 12V LEDs stripes, two sensors and an Arduino Nano and animate those LED stripes if a person is walking up or down the stairs.
 
-I created this for a friend of mine. He went out on the internet and bought sets of LED strips (originally thought for cars, 12V) and mounted them under the stairs. I then went ahead and created this little project around it, giving it some more fun.
+I created this for a friend of mine. He went out on the internet and bought sets of LED stripes (originally thought for cars, 12V) and mounted them under the stairs. I then went ahead and created this little project around it, giving it some more fun.
 
 For several reasons, all grounds of the LED stripes were connected together and all the positive leads were routed to the circuit for switching/PWM. Because of that, I had to use that dual-transistor circuit, which I found on the internet, to be able to switch the positive lines.
 It is actually easier to switch the negative lines, that just requires one transistor/MOSFET, so if you do this and you have a choice, you should probably go with that approach.
