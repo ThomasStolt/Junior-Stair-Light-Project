@@ -28,7 +28,7 @@ Additionally you need a prototype board for soldering components, some wires for
 # Printed Circuit Board
 I have created a first Release Candidate (RC) of a printed circuit board. I added the maximum number of channels (steps) that an Arduino Nano can have, which is number of Digital outputs + number of Analog outputs - 2 analog outputs (for the IR sensors), which should end up at 19.
 So, 19 is the maximum number of steps your stairs can have, using this single Arduino Nano module.
-To order the PCB you'll need to send the Gerber files to a PCB manufacturer of your choice. The Gerber files are in the ZIP archive here: (Gerber zip archive)[schematics/kicad/GERBERS].
+To order the PCB you'll need to send the Gerber files to a PCB manufacturer of your choice. The Gerber files are in the ZIP archive here: (Gerber zip archive)[../schematics/kicad/GERBERS].
 As of today, I haven't order a set, so I cannot say whether this is working. Try at your own risk!
 
 # Steps:
