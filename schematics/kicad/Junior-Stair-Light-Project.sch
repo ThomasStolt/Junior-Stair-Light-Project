@@ -1463,12 +1463,12 @@ $EndComp
 $Comp
 L R R1
 U 1 1 5B89507E
-P 9825 2400
-F 0 "R1" V 9905 2400 50  0000 C CNN
-F 1 "10k" V 9825 2400 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9755 2400 50  0001 C CNN
-F 3 "" H 9825 2400 50  0001 C CNN
-	1    9825 2400
+P 9825 2550
+F 0 "R1" V 9905 2550 50  0000 C CNN
+F 1 "10k" V 9825 2550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9755 2550 50  0001 C CNN
+F 3 "" H 9825 2550 50  0001 C CNN
+	1    9825 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1478,7 +1478,7 @@ Wire Wire Line
 Wire Wire Line
 	10325 2350 10325 3275
 Wire Wire Line
-	10625 2350 10325 2350
+	9825 2350 10625 2350
 Connection ~ 10325 3025
 $Comp
 L +5V #PWR07
@@ -1499,7 +1499,7 @@ Wire Wire Line
 	10425 2825 10625 2825
 Connection ~ 10425 2150
 Wire Wire Line
-	10025 2550 10025 2925
+	10025 2700 10025 2925
 Wire Wire Line
 	10625 2250 10225 2250
 Wire Wire Line
@@ -1507,16 +1507,16 @@ Wire Wire Line
 $Comp
 L R R2
 U 1 1 5B89A934
-P 10025 2400
-F 0 "R2" V 10105 2400 50  0000 C CNN
-F 1 "10k" V 10025 2400 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9955 2400 50  0001 C CNN
-F 3 "" H 10025 2400 50  0001 C CNN
-	1    10025 2400
+P 10025 2550
+F 0 "R2" V 10105 2550 50  0000 C CNN
+F 1 "10k" V 10025 2550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9955 2550 50  0001 C CNN
+F 3 "" H 10025 2550 50  0001 C CNN
+	1    10025 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9825 2550 9825 2750
+	9825 2700 9825 2750
 Connection ~ 9825 2750
 Connection ~ 10025 2850
 Text GLabel 9325 3350 2    39   Input ~ 0
@@ -1714,14 +1714,8 @@ Connection ~ 4625 6775
 Wire Wire Line
 	9400 1050 9400 1600
 Connection ~ 9575 1600
-Connection ~ 10025 2150
-Connection ~ 9825 2150
 Wire Wire Line
 	9625 2350 9625 2150
-Wire Wire Line
-	9825 2150 9825 2250
-Wire Wire Line
-	10025 2150 10025 2250
 Text GLabel 5975 1650 0    39   Input ~ 0
 Step16_a
 $Comp
@@ -1967,19 +1961,9 @@ Wire Wire Line
 Wire Wire Line
 	6675 1875 6350 1875
 Wire Wire Line
-	6350 1875 6350 4575
-Wire Wire Line
 	6675 3075 6675 3100
 Wire Wire Line
-	6675 3100 6350 3100
-Connection ~ 6350 3100
-Wire Wire Line
 	6675 4300 6675 4325
-Wire Wire Line
-	6675 4325 6350 4325
-Connection ~ 6350 4325
-Wire Wire Line
-	6350 3100 6350 6975
 Wire Wire Line
 	6350 6975 1175 6975
 Connection ~ 2900 6975
@@ -2076,4 +2060,18 @@ F 3 "" H 10350 5275 50  0001 C CNN
 	1    10350 5275
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	10025 2350 10025 2400
+Connection ~ 10325 2350
+Wire Wire Line
+	9825 2350 9825 2400
+Connection ~ 10025 2350
+Wire Wire Line
+	6350 1875 6350 6975
+Wire Wire Line
+	6675 3100 6350 3100
+Connection ~ 6350 3100
+Wire Wire Line
+	6675 4325 6350 4325
+Connection ~ 6350 4325
 $EndSCHEMATC

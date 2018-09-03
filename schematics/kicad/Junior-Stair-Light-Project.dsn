@@ -21,8 +21,8 @@
       )
     )
     (boundary
-      (path pcb 0  110490 -157480  207645 -157480  207645 -64135  110490 -64135
-            110490 -157480  110490 -157480)
+      (path pcb 0  110500 -67500  110500 -157500  200500 -157500  200500 -67500
+            110500 -67500  110500 -67500)
     )
     (via "Via[0-1]_600:400_um")
     (rule
@@ -34,135 +34,131 @@
   )
   (placement
     (component Mounting_Holes:MountingHole_3.2mm_M3_DIN965_Pad
-      (place MH2 203200 -68580 front 0 (PN MH2))
-      (place MH3 203200 -153035 front 0 (PN MH3))
+      (place MH2 196500 -71500 front 0 (PN MH2))
+      (place MH3 196500 -153500 front 0 (PN MH3))
       (place MH4 114935 -153035 front 0 (PN MH4))
-      (place MH1 114935 -68580 front 0 (PN MH1))
+      (place MH1 114500 -71500 front 0 (PN MH1))
     )
     (component "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval"
-      (place T13_2 188595 -76835 front 270 (PN BC327))
-      (place T2_1 147320 -97155 front 270 (PN BC337))
-      (place T3_1 147320 -111125 front 270 (PN BC337))
-      (place T3_2 147320 -104775 front 270 (PN BC327))
-      (place T4_1 147320 -125095 front 270 (PN BC337))
-      (place T4_2 147320 -118745 front 270 (PN BC327))
-      (place T5_1 147320 -138430 front 270 (PN BC337))
-      (place T5_2 147320 -132080 front 270 (PN BC327))
-      (place T6_1 147320 -153035 front 270 (PN BC337))
-      (place T6_2 147320 -146050 front 270 (PN BC327))
-      (place T7_1 168275 -83185 front 270 (PN BC337))
-      (place T7_2 168275 -76835 front 270 (PN BC327))
-      (place T8_1 168275 -97155 front 270 (PN BC337))
-      (place T8_2 168275 -90805 front 270 (PN BC327))
-      (place T9_1 168910 -111125 front 270 (PN BC337))
-      (place T9_2 168910 -104775 front 270 (PN BC327))
-      (place T10_1 168910 -125095 front 270 (PN BC337))
-      (place T10_2 168910 -118745 front 270 (PN BC327))
-      (place T11_1 168275 -138430 front 270 (PN BC337))
-      (place T11_2 168275 -132080 front 270 (PN BC327))
-      (place T12_1 168275 -153035 front 270 (PN BC337))
-      (place T12_2 168275 -146050 front 270 (PN BC327))
-      (place T13_1 188595 -83185 front 270 (PN BC337))
-      (place T14_1 188595 -97155 front 270 (PN BC337))
-      (place T14_2 188595 -90805 front 270 (PN BC327))
-      (place T15_1 188595 -111125 front 270 (PN BC337))
-      (place T15_2 188595 -104775 front 270 (PN BC327))
-      (place T16_1 188595 -125095 front 270 (PN BC337))
-      (place T16_2 188595 -118745 front 270 (PN BC327))
-      (place T17_1 188595 -138430 front 270 (PN BC337))
-      (place T17_2 188595 -132080 front 270 (PN BC327))
-      (place T18_1 188595 -152400 front 270 (PN BC337))
-      (place T18_2 188595 -146050 front 270 (PN BC327))
-      (place T19_1 202565 -75565 front 0 (PN BC337))
-      (place T19_2 196215 -75565 front 0 (PN BC327))
-      (place T2_2 147320 -90805 front 270 (PN BC327))
-      (place T1_1 147320 -83185 front 270 (PN BC337))
-      (place T1_2 147320 -76835 front 270 (PN BC327))
+      (place T13_2 185095 -75585 front 270 (PN BC327))
+      (place T2_1 147570 -96155 front 270 (PN BC337))
+      (place T3_1 147570 -110375 front 270 (PN BC337))
+      (place T3_2 147570 -104025 front 270 (PN BC327))
+      (place T4_1 147570 -124595 front 270 (PN BC337))
+      (place T4_2 147570 -118245 front 270 (PN BC327))
+      (place T5_1 147570 -138180 front 270 (PN BC337))
+      (place T5_2 147570 -131830 front 270 (PN BC327))
+      (place T6_1 147570 -153035 front 270 (PN BC337))
+      (place T6_2 147570 -146050 front 270 (PN BC327))
+      (place T7_1 166275 -81685 front 270 (PN BC337))
+      (place T7_2 166275 -75335 front 270 (PN BC327))
+      (place T8_1 166275 -95905 front 270 (PN BC337))
+      (place T8_2 166275 -89555 front 270 (PN BC327))
+      (place T9_1 166910 -110375 front 270 (PN BC337))
+      (place T9_2 166910 -104025 front 270 (PN BC327))
+      (place T10_1 166910 -124595 front 270 (PN BC337))
+      (place T10_2 166910 -118245 front 270 (PN BC327))
+      (place T11_1 166275 -137930 front 270 (PN BC337))
+      (place T11_2 166275 -131580 front 270 (PN BC327))
+      (place T12_1 166275 -152785 front 270 (PN BC337))
+      (place T12_2 166275 -145800 front 270 (PN BC327))
+      (place T13_1 185095 -81935 front 270 (PN BC337))
+      (place T14_1 185095 -96155 front 270 (PN BC337))
+      (place T14_2 185095 -89805 front 270 (PN BC327))
+      (place T15_1 185095 -110375 front 270 (PN BC337))
+      (place T15_2 185095 -104025 front 270 (PN BC327))
+      (place T16_1 185095 -124595 front 270 (PN BC337))
+      (place T16_2 185095 -118245 front 270 (PN BC327))
+      (place T17_1 185095 -138180 front 270 (PN BC337))
+      (place T17_2 185095 -131830 front 270 (PN BC327))
+      (place T18_1 185095 -152400 front 270 (PN BC337))
+      (place T18_2 185095 -146050 front 270 (PN BC327))
+      (place T2_2 147570 -89805 front 270 (PN BC327))
+      (place T1_1 147570 -81935 front 270 (PN BC337))
+      (place T1_2 147570 -75585 front 270 (PN BC327))
     )
     (component Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
-      (place R1_1 142240 -85725 front 180 (PN 10k))
-      (place R1_3 134620 -76835 front 0 (PN 1k))
-      (place R2_2 134620 -95250 front 0 (PN 1k))
-      (place R2_3 134620 -90805 front 0 (PN 1k))
-      (place R3_2 134620 -109220 front 0 (PN 1k))
-      (place R3_3 134620 -104775 front 0 (PN 1k))
-      (place R4_2 134620 -123190 front 0 (PN 1k))
-      (place R4_3 134620 -118745 front 0 (PN 1k))
-      (place R8_1 163195 -99695 front 180 (PN 10k))
-      (place R8_2 155575 -95250 front 0 (PN 1k))
-      (place R8_3 155575 -90805 front 0 (PN 1k))
-      (place R9_1 163195 -113665 front 180 (PN 10k))
-      (place R9_2 155575 -109220 front 0 (PN 1k))
-      (place R9_3 155575 -104775 front 0 (PN 1k))
-      (place R10_1 163195 -127635 front 180 (PN 10k))
-      (place R10_2 155575 -123190 front 0 (PN 1k))
-      (place R10_3 155575 -118745 front 0 (PN 1k))
-      (place R11_1 163195 -140970 front 180 (PN 10k))
-      (place R11_3 155575 -132080 front 0 (PN 1k))
-      (place R2_1 134620 -99695 front 0 (PN 10k))
-      (place R3_1 142240 -113665 front 180 (PN 10k))
-      (place R4_1 142240 -127635 front 180 (PN 10k))
-      (place R5_1 142240 -140970 front 180 (PN 10k))
-      (place R5_2 134620 -136525 front 0 (PN 1k))
-      (place R5_3 134620 -132080 front 0 (PN 1k))
-      (place R6_1 142240 -155575 front 180 (PN 10k))
-      (place R6_2 134620 -150495 front 0 (PN 1k))
-      (place R6_3 134620 -146050 front 0 (PN 1k))
-      (place R7_1 163195 -85725 front 180 (PN 10k))
-      (place R7_2 155575 -81280 front 0 (PN 1k))
-      (place R7_3 155575 -76835 front 0 (PN 1k))
-      (place R11_2 155575 -136525 front 0 (PN 1k))
-      (place R12_1 163195 -155575 front 180 (PN 10k))
-      (place R12_2 155575 -150495 front 0 (PN 1k))
-      (place R12_3 155575 -146050 front 0 (PN 1k))
-      (place R13_1 183515 -85725 front 180 (PN 10k))
-      (place R13_2 175895 -81280 front 0 (PN 1k))
-      (place R13_3 175895 -76835 front 0 (PN 1k))
-      (place R1 130175 -77470 front 180 (PN 10k))
-      (place R2 122555 -81915 front 0 (PN 10k))
-      (place R14_1 183515 -99695 front 180 (PN 10k))
-      (place R14_2 175895 -95250 front 0 (PN 1k))
-      (place R14_3 175895 -90805 front 0 (PN 1k))
-      (place R15_1 183515 -113665 front 180 (PN 10k))
-      (place R15_2 175895 -109220 front 0 (PN 1k))
-      (place R15_3 175895 -104775 front 0 (PN 1k))
-      (place R16_1 183515 -127635 front 180 (PN 10k))
-      (place R16_2 175895 -123190 front 0 (PN 1k))
-      (place R16_3 175895 -118745 front 0 (PN 1k))
-      (place R17_1 183515 -140970 front 180 (PN 10k))
-      (place R17_2 175895 -136525 front 0 (PN 1k))
-      (place R17_3 175895 -132080 front 0 (PN 1k))
-      (place R18_1 183515 -154940 front 180 (PN 10k))
-      (place R18_2 175895 -150495 front 0 (PN 1k))
-      (place R18_3 175895 -146050 front 0 (PN 1k))
-      (place R19_1 205105 -80645 front 270 (PN 10k))
-      (place R19_2 200660 -88265 front 90 (PN 1k))
-      (place R19_3 196215 -88265 front 90 (PN 1k))
-      (place R1_2 134620 -81280 front 0 (PN 1k))
+      (place R1_1 142490 -84475 front 180 (PN 10k))
+      (place R1_3 134870 -75585 front 0 (PN 1k))
+      (place R2_2 134870 -94250 front 0 (PN 1k))
+      (place R2_3 134870 -89805 front 0 (PN 1k))
+      (place R3_2 134870 -108470 front 0 (PN 1k))
+      (place R3_3 134870 -104025 front 0 (PN 1k))
+      (place R4_2 134870 -122690 front 0 (PN 1k))
+      (place R4_3 134870 -118245 front 0 (PN 1k))
+      (place R8_1 161195 -98445 front 180 (PN 10k))
+      (place R8_2 153575 -94000 front 0 (PN 1k))
+      (place R8_3 153575 -89555 front 0 (PN 1k))
+      (place R9_1 161195 -112665 front 180 (PN 10k))
+      (place R9_2 153575 -108220 front 0 (PN 1k))
+      (place R9_3 153575 -103775 front 0 (PN 1k))
+      (place R10_1 161195 -126885 front 180 (PN 10k))
+      (place R10_2 153575 -122440 front 0 (PN 1k))
+      (place R10_3 153575 -117995 front 0 (PN 1k))
+      (place R11_1 161195 -140470 front 180 (PN 10k))
+      (place R11_3 153575 -131580 front 0 (PN 1k))
+      (place R2_1 134870 -98695 front 0 (PN 10k))
+      (place R3_1 142490 -112915 front 180 (PN 10k))
+      (place R4_1 142490 -127135 front 180 (PN 10k))
+      (place R5_1 142490 -140720 front 180 (PN 10k))
+      (place R5_2 134870 -136275 front 0 (PN 1k))
+      (place R5_3 134870 -131830 front 0 (PN 1k))
+      (place R6_1 142490 -155575 front 180 (PN 10k))
+      (place R6_2 134870 -150495 front 0 (PN 1k))
+      (place R6_3 134870 -146050 front 0 (PN 1k))
+      (place R7_1 161195 -84225 front 180 (PN 10k))
+      (place R7_2 153575 -79780 front 0 (PN 1k))
+      (place R7_3 153575 -75335 front 0 (PN 1k))
+      (place R11_2 153575 -136025 front 0 (PN 1k))
+      (place R12_1 161195 -155325 front 180 (PN 10k))
+      (place R12_2 153575 -150245 front 0 (PN 1k))
+      (place R12_3 153575 -145800 front 0 (PN 1k))
+      (place R13_1 180015 -84475 front 180 (PN 10k))
+      (place R13_2 172395 -80030 front 0 (PN 1k))
+      (place R13_3 172395 -75585 front 0 (PN 1k))
+      (place R1 130175 -83820 front 180 (PN 10k))
+      (place R2 122555 -88265 front 0 (PN 10k))
+      (place R14_1 180015 -98695 front 180 (PN 10k))
+      (place R14_2 172395 -94250 front 0 (PN 1k))
+      (place R14_3 172395 -89805 front 0 (PN 1k))
+      (place R15_1 180015 -112915 front 180 (PN 10k))
+      (place R15_2 172395 -108470 front 0 (PN 1k))
+      (place R15_3 172395 -104025 front 0 (PN 1k))
+      (place R16_1 180015 -127135 front 180 (PN 10k))
+      (place R16_2 172395 -122690 front 0 (PN 1k))
+      (place R16_3 172395 -118245 front 0 (PN 1k))
+      (place R17_1 180015 -140720 front 180 (PN 10k))
+      (place R17_2 172395 -136275 front 0 (PN 1k))
+      (place R17_3 172395 -131830 front 0 (PN 1k))
+      (place R18_1 180015 -154940 front 180 (PN 10k))
+      (place R18_2 172395 -150495 front 0 (PN 1k))
+      (place R18_3 172395 -146050 front 0 (PN 1k))
+      (place R1_2 134870 -80030 front 0 (PN 1k))
     )
     (component NOKO_Wetimer:Arduino_Nano
-      (place U2 121920 -124460 front 0 (PN Arduino_Nano))
+      (place U2 121920 -127635 front 0 (PN Arduino_Nano))
     )
     (component Capacitors_THT:CP_Radial_D7.5mm_P2.50mm
-      (place C1 114935 -95885 front 0 (PN 100uF))
-      (place C2 128905 -95885 front 180 (PN 100uF))
+      (place C1 114935 -102235 front 0 (PN 100uF))
+      (place C2 128905 -102235 front 180 (PN 100uF))
     )
     (component Capacitors_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm
-      (place C3 127000 -88265 front 90 (PN 100nF))
+      (place C3 127000 -94615 front 90 (PN 100nF))
     )
     (component "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight"
-      (place J1 115570 -80010 front 90 (PN "12V Eingang"))
+      (place J1 115570 -86360 front 90 (PN "12V Eingang"))
     )
     (component "TO_SOT_Packages_THT:TO-220_Vertical"
-      (place U1 114935 -87630 front 0 (PN L4940V5))
+      (place U1 114935 -93980 front 0 (PN L4940V5))
     )
     (component "Connectors_JST:JST_XH_B03B-XH-A_03x2.50mm_Straight"
-      (place J3 123825 -69215 front 0 (PN CONN_01X03))
-      (place J4 135890 -69215 front 0 (PN CONN_01X03))
+      (place J3 121000 -76500 front 90 (PN CONN_01X03))
+      (place J4 129250 -76500 front 90 (PN CONN_01X03))
     )
-    (component "Connectors_JST:JST_XH_B10B-XH-A_10x2.50mm_Straight"
-      (place J5 200660 -93980 front 270 (PN Conn_01x10))
-      (place J6 200660 -123190 front 270 (PN Conn_01x10))
+    (component "Connectors_JST:JST_XH_B06B-XH-A_06x2.50mm_Straight"
+      (place J2 194750 -81750 front 270 (PN Conn_01x06))
+      (place J5 194750 -103250 front 270 (PN Conn_01x06))
+      (place J6 194750 -124500 front 270 (PN Conn_01x06))
     )
   )
   (library
@@ -533,37 +529,37 @@
       (pin Round[A]Pad_1750_um 2 2500 0)
       (pin Round[A]Pad_1750_um 3 5000 0)
     )
-    (image "Connectors_JST:JST_XH_B10B-XH-A_10x2.50mm_Straight"
+    (image "Connectors_JST:JST_XH_B06B-XH-A_06x2.50mm_Straight"
       (outline (path signal 100  -2450 2350  -2450 -3400))
-      (outline (path signal 100  -2450 -3400  24950 -3400))
-      (outline (path signal 100  24950 -3400  24950 2350))
-      (outline (path signal 100  24950 2350  -2450 2350))
+      (outline (path signal 100  -2450 -3400  14950 -3400))
+      (outline (path signal 100  14950 -3400  14950 2350))
+      (outline (path signal 100  14950 2350  -2450 2350))
       (outline (path signal 50  -2950 2850  -2950 -3900))
-      (outline (path signal 50  -2950 -3900  25450 -3900))
-      (outline (path signal 50  25450 -3900  25450 2850))
-      (outline (path signal 50  25450 2850  -2950 2850))
+      (outline (path signal 50  -2950 -3900  15450 -3900))
+      (outline (path signal 50  15450 -3900  15450 2850))
+      (outline (path signal 50  15450 2850  -2950 2850))
       (outline (path signal 120  -2550 2450  -2550 -3500))
-      (outline (path signal 120  -2550 -3500  25050 -3500))
-      (outline (path signal 120  25050 -3500  25050 2450))
-      (outline (path signal 120  25050 2450  -2550 2450))
+      (outline (path signal 120  -2550 -3500  15050 -3500))
+      (outline (path signal 120  15050 -3500  15050 2450))
+      (outline (path signal 120  15050 2450  -2550 2450))
       (outline (path signal 120  750 2450  750 1700))
-      (outline (path signal 120  750 1700  21750 1700))
-      (outline (path signal 120  21750 1700  21750 2450))
-      (outline (path signal 120  21750 2450  750 2450))
+      (outline (path signal 120  750 1700  11750 1700))
+      (outline (path signal 120  11750 1700  11750 2450))
+      (outline (path signal 120  11750 2450  750 2450))
       (outline (path signal 120  -2550 2450  -2550 1700))
       (outline (path signal 120  -2550 1700  -750 1700))
       (outline (path signal 120  -750 1700  -750 2450))
       (outline (path signal 120  -750 2450  -2550 2450))
-      (outline (path signal 120  23250 2450  23250 1700))
-      (outline (path signal 120  23250 1700  25050 1700))
-      (outline (path signal 120  25050 1700  25050 2450))
-      (outline (path signal 120  25050 2450  23250 2450))
+      (outline (path signal 120  13250 2450  13250 1700))
+      (outline (path signal 120  13250 1700  15050 1700))
+      (outline (path signal 120  15050 1700  15050 2450))
+      (outline (path signal 120  15050 2450  13250 2450))
       (outline (path signal 120  -2550 200  -1800 200))
       (outline (path signal 120  -1800 200  -1800 -2750))
-      (outline (path signal 120  -1800 -2750  11250 -2750))
-      (outline (path signal 120  25050 200  24300 200))
-      (outline (path signal 120  24300 200  24300 -2750))
-      (outline (path signal 120  24300 -2750  11250 -2750))
+      (outline (path signal 120  -1800 -2750  6250 -2750))
+      (outline (path signal 120  15050 200  14300 200))
+      (outline (path signal 120  14300 200  14300 -2750))
+      (outline (path signal 120  14300 -2750  6250 -2750))
       (outline (path signal 120  -350 2750  -2850 2750))
       (outline (path signal 120  -2850 2750  -2850 250))
       (outline (path signal 100  -350 2750  -2850 2750))
@@ -574,10 +570,6 @@
       (pin Round[A]Pad_1750_um 4 7500 0)
       (pin Round[A]Pad_1750_um 5 10000 0)
       (pin Round[A]Pad_1750_um 6 12500 0)
-      (pin Round[A]Pad_1750_um 7 15000 0)
-      (pin Round[A]Pad_1750_um 8 17500 0)
-      (pin Round[A]Pad_1750_um 9 20000 0)
-      (pin Round[A]Pad_1750_um 10 22500 0)
     )
     (padstack Round[A]Pad_1524_um
       (shape (circle F.Cu 1524))
@@ -645,51 +637,51 @@
       (pins C1-1 J1-2 U1-1)
     )
     (net GND
-      (pins U2-29 C1-2 C2-2 C3-2 J1-1 U1-2 J3-3 J4-3 T2_1-3 T3_1-3 T4_1-3 T5_1-3 T6_1-3
-        T7_1-3 T8_1-3 T9_1-3 T10_1-3 T11_1-3 T12_1-3 T13_1-3 T14_1-3 T15_1-3 T16_1-3
-        T17_1-3 T18_1-3 T19_1-3 T1_1-3)
+      (pins U2-29 C1-2 C2-2 C3-2 J1-1 U1-2 J3-3 J4-3 R1-1 R2-1 T2_1-3 T3_1-3 T4_1-3
+        T5_1-3 T6_1-3 T7_1-3 T8_1-3 T9_1-3 T10_1-3 T11_1-3 T12_1-3 T13_1-3 T14_1-3
+        T15_1-3 T16_1-3 T17_1-3 T18_1-3 T1_1-3)
     )
     (net +5V
-      (pins U2-30 C2-1 C3-1 U1-3 J3-1 J4-1 R1-1 R2-1)
+      (pins U2-30 C2-1 C3-1 U1-3 J3-1 J4-1)
     )
     (net Step1
-      (pins J5-1 T1_2-2)
+      (pins T1_2-2 J2-1)
     )
     (net Step2
-      (pins J5-2 T2_2-2)
+      (pins T2_2-2 J2-2)
     )
     (net Step3
-      (pins J5-3 T3_2-2)
+      (pins T3_2-2 J2-3)
     )
     (net Step4
-      (pins J5-4 T4_2-2)
+      (pins T4_2-2 J2-4)
     )
     (net Step5
-      (pins J5-5 T5_2-2)
+      (pins T5_2-2 J2-5)
     )
     (net Step6
-      (pins J5-6 T6_2-2)
+      (pins T6_2-2 J2-6)
     )
     (net Step7
-      (pins J5-7 T7_2-2)
+      (pins T7_2-2 J5-1)
     )
     (net Step8
-      (pins J5-8 T8_2-2)
+      (pins T8_2-2 J5-2)
     )
     (net Step9
-      (pins J5-9 T9_2-2)
+      (pins T9_2-2 J5-3)
     )
     (net Step10
-      (pins J5-10 T10_2-2)
+      (pins T10_2-2 J5-4)
     )
     (net Step11
-      (pins J6-1 T11_2-2)
+      (pins T11_2-2 J5-5)
     )
     (net Step12
-      (pins J6-2 T12_2-2)
+      (pins T12_2-2 J5-6)
     )
     (net Step13
-      (pins T13_2-2 J6-3 T14_2-2 T15_2-2)
+      (pins T13_2-2 T14_2-2 T15_2-2 J6-1)
     )
     (net "Net-(R1_1-Pad1)"
       (pins R1_1-1 T1_1-1)
@@ -908,13 +900,10 @@
       (pins T13_2-3 R13_3-2)
     )
     (net "Net-(J3-Pad2)"
-      (pins U2-27 J3-2 R1-2)
+      (pins U2-26 J3-2 R1-2)
     )
     (net "Net-(J4-Pad2)"
-      (pins U2-26 J4-2 R2-2)
-    )
-    (net "Net-(J6-Pad10)"
-      (pins J6-10)
+      (pins U2-25 J4-2 R2-2)
     )
     (net "Net-(R14_1-Pad1)"
       (pins R14_1-1 T14_1-1)
@@ -991,66 +980,49 @@
     (net "Net-(R18_3-Pad2)"
       (pins R18_3-2 T18_2-3)
     )
-    (net "Net-(R19_1-Pad1)"
-      (pins R19_1-1 T19_1-1)
-    )
-    (net Step19_a
-      (pins U2-25 R19_1-2)
-    )
-    (net "Net-(R19_2-Pad1)"
-      (pins R19_2-1 R19_3-1 T19_2-1)
-    )
-    (net "Net-(R19_2-Pad2)"
-      (pins R19_2-2 T19_1-2)
-    )
-    (net "Net-(R19_3-Pad2)"
-      (pins R19_3-2 T19_2-3)
-    )
     (net Step16
-      (pins J6-6 T16_2-2)
+      (pins T16_2-2 J6-4)
     )
     (net Step17
-      (pins J6-7 T17_2-2)
+      (pins T17_2-2 J6-5)
     )
     (net Step18
-      (pins J6-8 T18_2-2)
-    )
-    (net Step19
-      (pins J6-9 T19_2-2)
+      (pins T18_2-2 J6-6)
     )
     (net Step14
-      (pins J6-4)
+      (pins J6-2)
     )
     (net Step15
-      (pins J6-5)
+      (pins J6-3)
     )
-    (class kicad_default "" +12V +5V GND "Net-(J3-Pad2)" "Net-(J4-Pad2)" "Net-(J6-Pad10)"
-      "Net-(J6-Pad4)" "Net-(J6-Pad5)" "Net-(J6-Pad6)" "Net-(J6-Pad7)" "Net-(J6-Pad8)"
-      "Net-(J6-Pad9)" "Net-(R10_1-Pad1)" "Net-(R10_2-Pad1)" "Net-(R10_2-Pad2)"
-      "Net-(R10_3-Pad2)" "Net-(R11_1-Pad1)" "Net-(R11_2-Pad1)" "Net-(R11_2-Pad2)"
-      "Net-(R11_3-Pad2)" "Net-(R12_1-Pad1)" "Net-(R12_2-Pad1)" "Net-(R12_2-Pad2)"
-      "Net-(R12_3-Pad2)" "Net-(R13_1-Pad1)" "Net-(R13_2-Pad1)" "Net-(R13_2-Pad2)"
-      "Net-(R13_3-Pad2)" "Net-(R14_1-Pad1)" "Net-(R14_2-Pad1)" "Net-(R14_2-Pad2)"
-      "Net-(R14_3-Pad2)" "Net-(R15_1-Pad1)" "Net-(R15_2-Pad1)" "Net-(R15_2-Pad2)"
-      "Net-(R15_3-Pad2)" "Net-(R16_1-Pad1)" "Net-(R16_2-Pad1)" "Net-(R16_2-Pad2)"
-      "Net-(R16_3-Pad2)" "Net-(R17_1-Pad1)" "Net-(R17_2-Pad1)" "Net-(R17_2-Pad2)"
-      "Net-(R17_3-Pad2)" "Net-(R18_1-Pad1)" "Net-(R18_2-Pad1)" "Net-(R18_2-Pad2)"
-      "Net-(R18_3-Pad2)" "Net-(R19_1-Pad1)" "Net-(R19_2-Pad1)" "Net-(R19_2-Pad2)"
-      "Net-(R19_3-Pad2)" "Net-(R1_1-Pad1)" "Net-(R1_2-Pad1)" "Net-(R1_2-Pad2)"
-      "Net-(R1_3-Pad2)" "Net-(R2_1-Pad1)" "Net-(R2_2-Pad1)" "Net-(R2_2-Pad2)"
-      "Net-(R2_3-Pad2)" "Net-(R3_1-Pad1)" "Net-(R3_2-Pad1)" "Net-(R3_2-Pad2)"
-      "Net-(R3_3-Pad2)" "Net-(R4_1-Pad1)" "Net-(R4_2-Pad1)" "Net-(R4_2-Pad2)"
-      "Net-(R4_3-Pad2)" "Net-(R5_1-Pad1)" "Net-(R5_2-Pad1)" "Net-(R5_2-Pad2)"
-      "Net-(R5_3-Pad2)" "Net-(R6_1-Pad1)" "Net-(R6_2-Pad1)" "Net-(R6_2-Pad2)"
-      "Net-(R6_3-Pad2)" "Net-(R7_1-Pad1)" "Net-(R7_2-Pad1)" "Net-(R7_2-Pad2)"
-      "Net-(R7_3-Pad2)" "Net-(R8_1-Pad1)" "Net-(R8_2-Pad1)" "Net-(R8_2-Pad2)"
-      "Net-(R8_3-Pad2)" "Net-(R9_1-Pad1)" "Net-(R9_2-Pad1)" "Net-(R9_2-Pad2)"
-      "Net-(R9_3-Pad2)" "Net-(U2-Pad1)" "Net-(U2-Pad17)" "Net-(U2-Pad18)"
-      "Net-(U2-Pad2)" "Net-(U2-Pad28)" "Net-(U2-Pad3)" "Net-(U2-Pad4)" Step1
-      Step10 Step10_a Step11 Step11_a Step12 Step12_a Step13 Step13_a Step14
-      Step14_a Step15 Step15_a Step16 Step16_a Step17 Step17_a Step18 Step18_a
-      Step19 Step19_a Step1_a Step2 Step2_a Step3 Step3_a Step4 Step4_a Step5
-      Step5_a Step6 Step6_a Step7 Step7_a Step8 Step8_a Step9 Step9_a
+    (net "Net-(U2-Pad27)"
+      (pins U2-27)
+    )
+    (class kicad_default "" +12V +5V GND "Net-(J3-Pad2)" "Net-(J4-Pad2)" "Net-(R10_1-Pad1)"
+      "Net-(R10_2-Pad1)" "Net-(R10_2-Pad2)" "Net-(R10_3-Pad2)" "Net-(R11_1-Pad1)"
+      "Net-(R11_2-Pad1)" "Net-(R11_2-Pad2)" "Net-(R11_3-Pad2)" "Net-(R12_1-Pad1)"
+      "Net-(R12_2-Pad1)" "Net-(R12_2-Pad2)" "Net-(R12_3-Pad2)" "Net-(R13_1-Pad1)"
+      "Net-(R13_2-Pad1)" "Net-(R13_2-Pad2)" "Net-(R13_3-Pad2)" "Net-(R14_1-Pad1)"
+      "Net-(R14_2-Pad1)" "Net-(R14_2-Pad2)" "Net-(R14_3-Pad2)" "Net-(R15_1-Pad1)"
+      "Net-(R15_2-Pad1)" "Net-(R15_2-Pad2)" "Net-(R15_3-Pad2)" "Net-(R16_1-Pad1)"
+      "Net-(R16_2-Pad1)" "Net-(R16_2-Pad2)" "Net-(R16_3-Pad2)" "Net-(R17_1-Pad1)"
+      "Net-(R17_2-Pad1)" "Net-(R17_2-Pad2)" "Net-(R17_3-Pad2)" "Net-(R18_1-Pad1)"
+      "Net-(R18_2-Pad1)" "Net-(R18_2-Pad2)" "Net-(R18_3-Pad2)" "Net-(R1_1-Pad1)"
+      "Net-(R1_2-Pad1)" "Net-(R1_2-Pad2)" "Net-(R1_3-Pad2)" "Net-(R2_1-Pad1)"
+      "Net-(R2_2-Pad1)" "Net-(R2_2-Pad2)" "Net-(R2_3-Pad2)" "Net-(R3_1-Pad1)"
+      "Net-(R3_2-Pad1)" "Net-(R3_2-Pad2)" "Net-(R3_3-Pad2)" "Net-(R4_1-Pad1)"
+      "Net-(R4_2-Pad1)" "Net-(R4_2-Pad2)" "Net-(R4_3-Pad2)" "Net-(R5_1-Pad1)"
+      "Net-(R5_2-Pad1)" "Net-(R5_2-Pad2)" "Net-(R5_3-Pad2)" "Net-(R6_1-Pad1)"
+      "Net-(R6_2-Pad1)" "Net-(R6_2-Pad2)" "Net-(R6_3-Pad2)" "Net-(R7_1-Pad1)"
+      "Net-(R7_2-Pad1)" "Net-(R7_2-Pad2)" "Net-(R7_3-Pad2)" "Net-(R8_1-Pad1)"
+      "Net-(R8_2-Pad1)" "Net-(R8_2-Pad2)" "Net-(R8_3-Pad2)" "Net-(R9_1-Pad1)"
+      "Net-(R9_2-Pad1)" "Net-(R9_2-Pad2)" "Net-(R9_3-Pad2)" "Net-(U2-Pad1)"
+      "Net-(U2-Pad17)" "Net-(U2-Pad18)" "Net-(U2-Pad2)" "Net-(U2-Pad27)" "Net-(U2-Pad28)"
+      "Net-(U2-Pad3)" "Net-(U2-Pad4)" Step1 Step10 Step10_a Step11 Step11_a
+      Step12 Step12_a Step13 Step13_a Step14 Step14_a Step15 Step15_a Step16
+      Step16_a Step17 Step17_a Step18 Step18_a Step1_a Step2 Step2_a Step3
+      Step3_a Step4 Step4_a Step5 Step5_a Step6 Step6_a Step7 Step7_a Step8
+      Step8_a Step9 Step9_a
       (circuit
         (use_via Via[0-1]_600:400_um)
       )

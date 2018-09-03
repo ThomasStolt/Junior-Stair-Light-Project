@@ -1,0 +1,26 @@
+Drill report for /home/stoth05/Dokumente/Github/Junior-Stair-Light-Project/schematics/kicad/Junior-Stair-Light-Project.kicad_pcb
+Created on Mo 03 Sep 2018 21:09:41 CEST
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'Junior-Stair-Light-Project.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0,40mm  0,016"  (1 hole)
+    T2  0,60mm  0,024"  (108 holes)
+    T3  0,80mm  0,031"  (118 holes)
+    T4  1,00mm  0,039"  (59 holes)
+    T5  3,20mm  0,126"  (4 holes)
+
+    Total plated holes count 290
+
+
+Drill file 'Junior-Stair-Light-Project-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

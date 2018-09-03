@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 4606)
+    (start_pass_no 2770)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -74,11 +74,11 @@
     "Net-(R8_1-Pad1)" "Net-(R8_2-Pad1)" "Net-(R8_2-Pad2)" "Net-(R8_3-Pad2)" "Net-(R9_1-Pad1)" "Net-(R9_2-Pad1)" "Net-(R9_2-Pad2)" "Net-(R9_3-Pad2)"
     "Net-(R10_1-Pad1)" "Net-(R10_2-Pad1)" "Net-(R10_2-Pad2)" "Net-(R10_3-Pad2)" "Net-(R11_1-Pad1)" "Net-(R11_2-Pad1)" "Net-(R11_2-Pad2)" "Net-(R11_3-Pad2)"
     "Net-(R12_1-Pad1)" "Net-(R12_2-Pad1)" "Net-(R12_2-Pad2)" "Net-(R12_3-Pad2)" "Net-(R13_1-Pad1)" "Net-(R13_2-Pad1)" "Net-(R13_2-Pad2)" "Net-(R13_3-Pad2)"
-    "Net-(J3-Pad2)" "Net-(J4-Pad2)" "Net-(J6-Pad10)" "Net-(R14_1-Pad1)" "Step14_a" "Net-(R14_2-Pad1)" "Net-(R14_2-Pad2)" "Net-(R14_3-Pad2)"
-    "Net-(R15_1-Pad1)" "Step15_a" "Net-(R15_2-Pad1)" "Net-(R15_2-Pad2)" "Net-(R15_3-Pad2)" "Net-(R16_1-Pad1)" "Step16_a" "Net-(R16_2-Pad1)"
-    "Net-(R16_2-Pad2)" "Net-(R16_3-Pad2)" "Net-(R17_1-Pad1)" "Step17_a" "Net-(R17_2-Pad1)" "Net-(R17_2-Pad2)" "Net-(R17_3-Pad2)" "Net-(R18_1-Pad1)"
-    "Step18_a" "Net-(R18_2-Pad1)" "Net-(R18_2-Pad2)" "Net-(R18_3-Pad2)" "Net-(R19_1-Pad1)" "Step19_a" "Net-(R19_2-Pad1)" "Net-(R19_2-Pad2)"
-    "Net-(R19_3-Pad2)" Step16 Step17 Step18 Step19 Step14 Step15
+    "Net-(J3-Pad2)" "Net-(J4-Pad2)" "Net-(R14_1-Pad1)" "Step14_a" "Net-(R14_2-Pad1)" "Net-(R14_2-Pad2)" "Net-(R14_3-Pad2)" "Net-(R15_1-Pad1)"
+    "Step15_a" "Net-(R15_2-Pad1)" "Net-(R15_2-Pad2)" "Net-(R15_3-Pad2)" "Net-(R16_1-Pad1)" "Step16_a" "Net-(R16_2-Pad1)" "Net-(R16_2-Pad2)"
+    "Net-(R16_3-Pad2)" "Net-(R17_1-Pad1)" "Step17_a" "Net-(R17_2-Pad1)" "Net-(R17_2-Pad2)" "Net-(R17_3-Pad2)" "Net-(R18_1-Pad1)" "Step18_a"
+    "Net-(R18_2-Pad1)" "Net-(R18_2-Pad2)" "Net-(R18_3-Pad2)" Step16 Step17 Step18 Step14 Step15
+    "Net-(U2-Pad27)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
