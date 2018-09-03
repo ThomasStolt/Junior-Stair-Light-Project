@@ -16,7 +16,7 @@ Nothing more to add really, just read the circuit under schematics/kicad (there 
 - 2 x 100uF electrolytic capacitor
 - 1 x 100nF ceramic capacitor
 
-Per step:
+Then per step you need:
 - 1 x LED stripe (12V, for cars)
 - 2 x 1kOhm resistor
 - 1 x 10kOhm resistor
@@ -25,14 +25,20 @@ Per step:
 
 Additionally you need a prototype board for soldering components, some wires for connecting the components, tools (soldering iron, solder, cutter, clippers, a Dremel helps to cut the copper on the board) and some time and patience.
 
+# Printed Circuit Board
+I have created a first Release Candidate (RC) of a printed circuit board for this. I added the maximum number of channels (steps) that an Arduino Nano can have, which is number of Digital outputs + number of Analog outputs - 2 analog outputs (for the IR sensors), which should end up at 18.
+
+So, 18 is the maximum number of steps your stairs can have, using this single Arduino Nano module.
+To order the PCB you'll need to send the Gerber files to a PCB manufacturer of your choice. The Gerber files are in the ZIP archive here: [Gerber zip archive](schematics/kicad/GERBERS).
+
+As of today, I haven't order a set, so I cannot say whether this is working. Try at your own risk!
+
 # Steps:
 1. buy all the material
 2. create the board (see pictures), start with one channel first
 3. test that first channel
 4. create all the channels
 5. stick it to your stairs
-
-I'll create a PCB, so if you want you can order it from your favourite PCB shop, should be cheap as well and save a lot of time. It is not easy to prototype this stuff, depends on you.
 
 # Pictures
 
