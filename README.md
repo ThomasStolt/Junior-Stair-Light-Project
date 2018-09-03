@@ -33,7 +33,7 @@ I have created a first "Release Candidate" (RC) of a printed circuit board for t
 
 So, 18 is the maximum number of steps your stairs can have using this single Arduino Nano module. If you have less stairs, just populate the board with the appropriate number of parts for the channels. If you have more stairs - well, you are on your own.
 
-To order the PCB you'll need to send/upload the Gerber files to a PCB manufacturer of your choice. You can find the Gerber files here: [Gerber zip archive](schematics/kicad/GERBERS), just use the ZIP archive. The board is 9cm x 9cm, currently you get special offers for 2$ for 10 pieces - ridicolous!
+To order the PCB you'll need to send/upload the Gerber files to a PCB manufacturer of your choice. You can find the Gerber files here: [Gerbes](schematics/kicad/GERBERS), just use the ZIP archive. The board is 9cm x 9cm, currently you get special offers for 2$ for 10 pieces - ridicolous!
 
 As of today (Sep 2018), I have not yet ordered a PCB, so I cannot say whether this PCB is really working, it might still be full of bugs! Try at your own risk!
 
