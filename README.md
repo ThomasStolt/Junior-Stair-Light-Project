@@ -1,6 +1,6 @@
 # Junior-Stair-Light-Project
 
-This is a smaller/easier/cheaper version of my NeoPixel Stair Light Project. The basic idea is to use a bunch of cheap 12V LEDs stripes, two sensors and an Arduino Nano and animate those LED stripes if a person is walking up or down the stairs.
+This is a smaller/easier/cheaper version of my NeoPixel Stair Light Project. The basic idea is to use a bunch of cheap 12V LEDs stripes attached to your indoor stairs, two IR sensors and an Arduino Nano and animate those LED stripes if a person is walking up or down the stairs.
 
 I created this for a friend of mine. He went out on the internet and bought sets of LED stripes (originally thought for cars, 12V) and mounted them under the stairs. I then went ahead and created this little project around it, giving it some more fun.
 
